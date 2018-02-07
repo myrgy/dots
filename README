@@ -1,0 +1,4 @@
+install/delete/repair
+stow -S -v -t ~ common
+stow -D -v -t ~ common
+stow -R -v -t ~ common
