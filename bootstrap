@@ -1,4 +1,10 @@
 #!/bin/sh
-git clone --depth=1       git@github.com:robbyrussell/oh-my-zsh.git common/.oh-my-zsh
-git clone --depth=1 -b my git@github.com:myrgy/fork-spacemacs.git common/.emacs.d
-git clone --depth=1       git@github.com:myrgy/dotspacemacs.d.git common/.spacemacs.d
+git clone --depth=1       git@github.com:robbyrussell/oh-my-zsh.git                 common/.oh-my-zsh
+git clone --depth=1       git://github.com/zsh-users/zsh-syntax-highlighting.git    common/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+git clone --depth=1 -b my git@github.com:myrgy/fork-spacemacs.git                   common/.emacs.d
+git clone --depth=1       git@github.com:myrgy/dotspacemacs.d.git                   common/.spacemacs.d
+pushd
+cd common/.spacemacs.d
+./bootstrap
+popd
+
