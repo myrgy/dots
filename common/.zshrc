@@ -117,4 +117,4 @@ bindkey "^Y" znt-kill-widget
 alias ccat='source-highlight --out-format=esc -o STDOUT -i'
 alias pcat='source-highlight --out-format=esc -o STDOUT '
 
-neofetch
+neofetch --disable packages
