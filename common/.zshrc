@@ -7,9 +7,9 @@
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="srdev" 
-ZSH_THEME="agnoster" 
+# "srdev" 
 #  "robbyrussell"
+ZSH_THEME="agnoster" 
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -89,9 +89,10 @@ source $ZSH/oh-my-zsh.sh
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
 
-export PATH="/home/adalshov/.cargo/bin:/home/adalshov/.opt/bin:$PATH"
-export PATH="/home/adalshov/.local/npm-global/bin:$PATH"
-# export PATH="/home/adalshov/Projects/github/ihsec:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$HOME/.opt/bin:$PATH"
+export PATH="$HOME/.local/npm-global/bin:$PATH"
+# export PATH="$HOME/Projects/github/ihsec:$PATH"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
