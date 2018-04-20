@@ -7,7 +7,9 @@
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+ZSH_THEME="srdev" 
+ZSH_THEME="agnoster" 
+#  "robbyrussell"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -87,7 +89,8 @@ source $ZSH/oh-my-zsh.sh
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
 
-export PATH="/home/adalshov/.cargo/bin:$PATH"
+export PATH="/home/adalshov/.cargo/bin:/home/adalshov/.opt/bin:$PATH"
+export PATH="/home/adalshov/.local/npm-global/bin:$PATH"
 # export PATH="/home/adalshov/Projects/github/ihsec:$PATH"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
@@ -113,3 +116,4 @@ bindkey "^Y" znt-kill-widget
 alias ccat='source-highlight --out-format=esc -o STDOUT -i'
 alias pcat='source-highlight --out-format=esc -o STDOUT '
 
+neofetch
