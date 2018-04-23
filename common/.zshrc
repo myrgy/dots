@@ -60,13 +60,14 @@ plugins=(git
        	tmux 
 	zsh-navigation-tools 
         zsh-syntax-highlighting
+	zsh-autosuggestions
 	github 
 	docker 
 	man 
 	sudo 
 	systemd 
 	colorize)
-
+#ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=white'  
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -116,5 +117,7 @@ bindkey "^Y" znt-kill-widget
 
 alias ccat='source-highlight --out-format=esc -o STDOUT -i'
 alias pcat='source-highlight --out-format=esc -o STDOUT '
+
+alias logcat=logcat-color
 
 neofetch --disable packages
