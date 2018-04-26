@@ -1,15 +1,27 @@
 #!/bin/sh
-git clone --depth=1       git@github.com:robbyrussell/oh-my-zsh.git                 common/.oh-my-zsh
+function repo() {
+    url=$1
+    dir=$2
+    if [ -d $dir/.git ]; then
+       git -C $dir pull && git submodule update --init
+    else
+       git clone --depth=1 $url $dir
+    fi
+}
+
+repo git://github.com/tmux-plugins/tpm.git                       common/.tmux/plugins/tpm
+repo git://github.com/robbyrussell/oh-my-zsh.git                 common/.oh-my-zsh
 
 ZSH_CUSTOM="common/.oh-my-zsh/custom/"
+repo git://github.com/zsh-users/zsh-syntax-highlighting.git    common/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+repo git://github.com/zsh-users/zsh-autosuggestions            ${ZSH_CUSTOM}/plugins/zsh-autosuggestions
+repo git://github.com/zsh-users/zsh-history-substring-search   ${ZSH_CUSTOM}/plugins/zsh-history-substring-search
+repo git://github.com/zsh-users/zsh-syntax-highlighting.git    ${ZSH_CUSTOM}/plugins/zsh-syntax-highlighting
 
-git clone --depth=1       git://github.com/zsh-users/zsh-syntax-highlighting.git    common/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
-git clone --depth=1       git://github.com/zsh-users/zsh-autosuggestions            ${ZSH_CUSTOM}/plugins/zsh-autosuggestions
-git clone --depth=1       git://github.com/zsh-users/zsh-history-substring-search   ${ZSH_CUSTOM}/plugins/zsh-history-substring-search
-git clone --depth=1       git://github.com/zsh-users/zsh-syntax-highlighting.git    ${ZSH_CUSTOM}/plugins/zsh-syntax-highlighting
+EMACSD_PATH=common/.emacs.d
+git -C $EMACSD_PATH pull || git clone --depth=1 -b my git@github.com:myrgy/fork-spacemacs.git $EMACSD_PATH
+repo git@github.com:myrgy/dotspacemacs.d.git      common/.spacemacs.d
 
-git clone --depth=1 -b my git@github.com:myrgy/fork-spacemacs.git                   common/.emacs.d
-git clone --depth=1       git@github.com:myrgy/dotspacemacs.d.git                   common/.spacemacs.d
 pushd
 cd common/.spacemacs.d
 ./bootstrap
