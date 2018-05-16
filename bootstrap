@@ -22,7 +22,7 @@ EMACSD_PATH=common/.emacs.d
 git -C $EMACSD_PATH pull || git clone --depth=1 -b my git@github.com:myrgy/fork-spacemacs.git $EMACSD_PATH
 repo git@github.com:myrgy/dotspacemacs.d.git      common/.spacemacs.d
 
-pushd
+pushd .
 cd common/.spacemacs.d
 ./bootstrap
 popd
