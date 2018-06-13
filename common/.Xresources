@@ -1,0 +1,50 @@
+Xft.dpi: 180
+Xft.autohint: 0
+Xft.lcdfilter: lcddefault
+Xft.hintstyle: hintfull
+Xft.hinting: 1
+Xft.antialias: 1
+Xft.rgba: rgb
+
+#include ".config/xresources/thems/derp"
+
+! URxvt*font: xft:Terminess Powerline:size=12
+! urxvt*font: xft:Terminus:pixelsize=12,xft:Inconsolata\ for\ Powerline:pixelsize=12
+URxvt*font: xft:Source\ Code\ Pro\ Medium:size=11:antialias=true:hinting=true,xft:Source\ Code\ Pro\ Medium:size=11:antialias=true:hinting=true,xft:Inconsolata\ for\ Powerline:pixelsize=12
+! XTerm*faceName: xft:adobe-source-code-pro:medium:size=10
+
+! urxvt*borderLess: false
+! urxvt*loginShell: true
+! urxvt*inheritPixmap: true
+! urxvt*tintColor: #8E8E8E
+! urxvt*shading: 90
+! !urxvt*tintColor: #ABC865
+! urxvt*foreground: #FFFCCC
+! urxvt*background: #000000
+! urxvt*scrollBar: false
+! urxvt*saveLines: 3000
+! urxvt*geometry: 115x33
+! urxvt*externalBorder: 2
+! urxvt*internalBorder: 10
+! !urxvt*fade: 50
+! !urxvt*fadecolour: #47CFE7
+! !urxvt*font: xft:Bitstream Vera Sans Mono:charwidth=8:pixelsize=10
+! ! urxvt*font: xft:Terminus:pixelsize=12
+! !urxvt*font: -*-Bright-*
+! urxvt*transparent:    true
+! urxvt*color0:           #000000
+! urxvt*color1:           #E86402
+! urxvt*color2:           #A2EBA2
+! urxvt*color3:           #968a38
+! urxvt*color4:           #414171
+! urxvt*color5:           #963c59
+! urxvt*color6:           #418179
+! urxvt*color7:           #bebebe
+! urxvt*color8:           #666666
+! urxvt*color9:           #a35757
+! urxvt*color10:          #c5f779
+! urxvt*color11:          #fff796
+! urxvt*color12:          #4186be
+! urxvt*color13:          #cf9ebe
+! urxvt*color14:          #71bebe
+! urxvt*color15:          #FFFCCC
