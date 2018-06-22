@@ -54,19 +54,19 @@ ZSH_THEME="agnoster"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git
-	fedora
-       	emacs
-       	rsync
-       	tmux
-	zsh-navigation-tools
+        fedora
+        emacs
+        rsync
+        tmux
+        zsh-navigation-tools
         zsh-syntax-highlighting
-	zsh-autosuggestions
-	github
-	docker
-	man
-	sudo
-	systemd
-	colorize)
+        zsh-autosuggestions
+        github
+        docker
+        man
+        sudo
+        systemd
+        colorize)
 #ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=white'
 source $ZSH/oh-my-zsh.sh
 
@@ -120,4 +120,4 @@ alias pcat='source-highlight --out-format=esc -o STDOUT '
 
 alias logcat=logcat-color
 
-neofetch --disable packages
+neofetch --disable packages --ascii_distro deepin
