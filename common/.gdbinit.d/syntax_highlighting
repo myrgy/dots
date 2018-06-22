@@ -1,0 +1,5 @@
+python
+from pygments.styles import get_all_styles as styles
+for s in styles():
+    print(s)
+end

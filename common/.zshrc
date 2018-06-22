@@ -7,9 +7,9 @@
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-# "srdev" 
+# "srdev"
 #  "robbyrussell"
-ZSH_THEME="agnoster" 
+ZSH_THEME="agnoster"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -53,21 +53,21 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git 
+plugins=(git
 	fedora
        	emacs
        	rsync
-       	tmux 
-	zsh-navigation-tools 
+       	tmux
+	zsh-navigation-tools
         zsh-syntax-highlighting
 	zsh-autosuggestions
-	github 
-	docker 
-	man 
-	sudo 
-	systemd 
+	github
+	docker
+	man
+	sudo
+	systemd
 	colorize)
-#ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=white'  
+#ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=white'
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
