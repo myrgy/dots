@@ -7,7 +7,6 @@ Xft.antialias: 1
 Xft.rgba: rgb
 
 ! #include ".config/xresources/thems/derp"
-
 ! URxvt*font: xft:Terminess Powerline:size=12
 ! urxvt*font: xft:Terminus:pixelsize=12,xft:Inconsolata\ for\ Powerline:pixelsize=12
 URxvt*font: xft:Source\ Code\ Pro\ Medium:size=11:antialias=true:hinting=true,xft:Source\ Code\ Pro\ Medium:size=11:antialias=true:hinting=true,xft:Inconsolata\ for\ Powerline:pixelsize=12
@@ -61,15 +60,22 @@ URxvt.internalBorder:     0
 URxvt*selectToClipboard:  true
 URxvt*saveLines:          10000
 
-URxvt.perl-ext-common:    default,matcher,tabbedex,searchable-scrollback
+URxvt.perl-lib:           .config/urxvt
+URxvt.perl-ext-common:    default,matcher,tabbedex,selection-to-clipboard,searchable-scrollback
 ! URxvt.urlLauncher:        /usr/bin/chromium
 URxvt.matcher.button:     1
-URxvt.tabbed.tabbar-fg:   8
-URxvt.tabbed.tabbar-bg:   0
-URxvt.tabbed.tab-fg:      2
-URxvt.tabbed.tab-bg:      0
-URxvt.tabbed.new-button:  no
-URxvt.tabbed.title:       no
+! URxvt.tabbed.tabbar-fg:   8
+! URxvt.tabbed.tabbar-bg:   0
+! URxvt.tabbed.tab-fg:      2
+! URxvt.tabbed.tab-bg:      0
+! URxvt.tabbed.new-button:  no
+! URxvt.tabbed.title:       no
+URxvt.tabbed.new-button:	true
+URXvt.tabbed.reopen-on-close:	yes
+! URxvt.keysym.Control-Shift-t:	perl:tabbedex:new_tab
+! URxvt.keysym.Shifft-Right:	perl:tabbedex:next_tab
+! URxvt.keysym.Shift-Left:	perl:tabbedex:prev_tab
+! URxvt.tabbed.no-tabbedex-keys:	true
 
 ! Tango color palette
 URxvt*background:         #2e3436
