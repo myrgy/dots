@@ -9,7 +9,7 @@ Xft.rgba: rgb
 ! #include ".config/xresources/thems/derp"
 ! URxvt*font: xft:Terminess Powerline:size=12
 ! urxvt*font: xft:Terminus:pixelsize=12,xft:Inconsolata\ for\ Powerline:pixelsize=12
-URxvt*font: xft:Source\ Code\ Pro\ Medium:size=11:antialias=true:hinting=true,xft:Source\ Code\ Pro\ Medium:size=11:antialias=true:hinting=true,xft:Inconsolata\ for\ Powerline:pixelsize=12
+URxvt*font: xft:Source\ Code\ Pro\ Medium:size=6:antialias=true:hinting=true,xft:Source\ Code\ Pro\ Medium:size=6:antialias=true:hinting=true,xft:Inconsolata\ for\ Powerline:pixelsize=6
 ! XTerm*faceName: xft:adobe-source-code-pro:medium:size=10
 
 ! urxvt*borderLess: false
@@ -54,16 +54,44 @@ xcursor.theme:            Vanilla-DMZ
 ! URxvt config
 URxvt*termName:           rxvt-16color
 
-URxvt.scrollBar:          off
 ! URxvt.font:               xft:monaco:size=10:antialias=true
-URxvt.internalBorder:     0
+URxvt*internalBorder:     0
 URxvt*selectToClipboard:  true
-URxvt*saveLines:          10000
+URxvt*saveLines:          100000
+URxvt*scrollTtyOutput:    false
+URxvt*scrollWithBuffer:   true
+URxvt*scrollTtyKeypress:  true
 
-URxvt.perl-lib:           .config/urxvt
-URxvt.perl-ext-common:    default,matcher,tabbedex,selection-to-clipboard,searchable-scrollback
-! URxvt.urlLauncher:        /usr/bin/chromium
-URxvt.matcher.button:     1
+URxvt*perl-lib:           .config/urxvt
+URxvt*perl-ext-common:    default,tabbedex,selection-to-clipboard,searchable-scrollback,matcher,font-size,fullscreen
+URxvt*scrollBar:          true
+URxvt*scrollBar_right:    true
+URxvt*transpscrollbar:    true
+URxvt*scrollBar_floating: true
+
+URxvt*url-launcher:       /usr/bin/xdg-open
+URxvt*matcher.button:     1
+URxvt*keysym.C-Delete:    matcher:last
+URxvt*keysym.M-Delete:    matcher:list
+
+URxvt.keysym.F11: perl:fullscreen:switch
+! regexps
+! .0 for web links
+URxvt.matcher.pattern.1: \\B(/\\S+?):(\\d+)(?=:|$)               ! gcc and all
+URxvt.matcher.pattern.2: (?:\\s)([\\~\\.]?\\/\{1,1\}[\\.\\w]\\S+)\\b
+! launchers . Need all 0..x defined
+URxvt.matcher.launcher.0: xdg-open
+URxvt.matcher.launcher.1: gvim +$2 $1
+URxvt.matcher.launcher.2: emacsclient $1
+
+!! Change font size on Control-Plus/Minus
+! URxvt*keysym.C-Up:     font-size:increase
+! URxvt*keysym.C-Down:   font-size:decrease
+! URxvt*keysym.C-S-Up:   font-size:incglobal
+! URxvt*keysym.C-S-Down: font-size:decglobal
+! URxvt*keysym.C-equal:  font-size:reset
+! URxvt*keysym.C-slash:  font-size:show
+
 ! URxvt.tabbed.tabbar-fg:   8
 ! URxvt.tabbed.tabbar-bg:   0
 ! URxvt.tabbed.tab-fg:      2

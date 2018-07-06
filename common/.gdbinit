@@ -1576,8 +1576,8 @@ set print array-indexes on
 set python print-stack full
 
 # Start ------------------------------------------------------------------------
-python Dashboard.start()
-dashboard -enable off
+#python Dashboard.start()
+#dashboard -enable off
 # ------------------------------------------------------------------------------
 # Copyright (c) 2015-2017 Andrea Cardaci <cyrus.and@gmail.com>
 #

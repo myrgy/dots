@@ -19,7 +19,7 @@ repo git://github.com/zsh-users/zsh-history-substring-search   ${ZSH_CUSTOM}/plu
 repo git://github.com/zsh-users/zsh-syntax-highlighting.git    ${ZSH_CUSTOM}/plugins/zsh-syntax-highlighting
 
 EMACSD_PATH=common/.emacs.d
-git -C $EMACSD_PATH pull || git clone --depth=1 -b my git@github.com:myrgy/fork-spacemacs.git $EMACSD_PATH
+git -C $EMACSD_PATH pull || git clone --depth=1 -b new-cquery-layer git@github.com:myrgy/fork-spacemacs.git $EMACSD_PATH
 repo git@github.com:myrgy/dotspacemacs.d.git      common/.spacemacs.d
 
 pushd .
