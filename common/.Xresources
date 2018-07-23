@@ -57,10 +57,6 @@ URxvt*termName:           rxvt-16color
 ! URxvt.font:               xft:monaco:size=10:antialias=true
 URxvt*internalBorder:     0
 URxvt*selectToClipboard:  true
-URxvt*saveLines:          100000
-URxvt*scrollTtyOutput:    false
-URxvt*scrollWithBuffer:   true
-URxvt*scrollTtyKeypress:  true
 
 URxvt*perl-lib:           .config/urxvt
 URxvt*perl-ext-common:    default,tabbedex,selection-to-clipboard,searchable-scrollback,matcher,font-size,fullscreen
@@ -91,6 +87,12 @@ URxvt.matcher.launcher.2: emacsclient $1
 ! URxvt*keysym.C-S-Down: font-size:decglobal
 ! URxvt*keysym.C-equal:  font-size:reset
 ! URxvt*keysym.C-slash:  font-size:show
+URxvt*saveLines:          100000000
+URxvt*scrollWithBuffer:   true
+URxvt*scrollTtyKeypress:  true
+URxvt*scrollTtyOutput:    false
+URxvt.scrollstyle:        plain
+URxvt.scrollBar:          on
 
 ! URxvt.tabbed.tabbar-fg:   8
 ! URxvt.tabbed.tabbar-bg:   0
