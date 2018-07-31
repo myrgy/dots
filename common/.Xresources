@@ -9,7 +9,7 @@ Xft.rgba: rgb
 ! #include ".config/xresources/thems/derp"
 ! URxvt*font: xft:Terminess Powerline:size=12
 ! urxvt*font: xft:Terminus:pixelsize=12,xft:Inconsolata\ for\ Powerline:pixelsize=12
-URxvt*font: xft:Source\ Code\ Pro\ Medium:size=8:antialias=true:hinting=true,xft:Source\ Code\ Pro\ Medium:size=8:antialias=true:hinting=true,xft:Inconsolata\ for\ Powerline:size=8
+URxvt*font: xft:Source\ Code\ Pro\ Medium:size=6:antialias=true:hinting=true,xft:Source\ Code\ Pro\ Medium:size=6:antialias=true:hinting=true,xft:Inconsolata\ for\ Powerline:size=6
 ! XTerm*faceName: xft:adobe-source-code-pro:medium:size=10
 
 ! urxvt*borderLess: false
@@ -107,6 +107,7 @@ URXvt.tabbed.reopen-on-close:	yes
 ! URxvt.keysym.Shift-Left:	perl:tabbedex:prev_tab
 ! URxvt.tabbed.no-tabbedex-keys:	true
 
+Urxvt*depth:              32
 ! Tango color palette
 URxvt*background:         #2e3436
 URxvt*foreground:         #eeeeec
