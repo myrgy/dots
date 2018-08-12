@@ -7,54 +7,9 @@ Xft.antialias: 1
 Xft.rgba: rgb
 
 ! #include ".config/xresources/thems/derp"
-! URxvt*font: xft:Terminess Powerline:size=12
-! urxvt*font: xft:Terminus:pixelsize=12,xft:Inconsolata\ for\ Powerline:pixelsize=12
-URxvt*font: xft:Source\ Code\ Pro\ Medium:size=6:antialias=true:hinting=true,xft:Source\ Code\ Pro\ Medium:size=6:antialias=true:hinting=true,xft:Inconsolata\ for\ Powerline:size=6
-! XTerm*faceName: xft:adobe-source-code-pro:medium:size=10
-
-! urxvt*borderLess: false
-! urxvt*loginShell: true
-! urxvt*inheritPixmap: true
-! urxvt*tintColor: #8E8E8E
-! urxvt*shading: 90
-! !urxvt*tintColor: #ABC865
-! urxvt*foreground: #FFFCCC
-! urxvt*background: #000000
-! urxvt*scrollBar: false
-! urxvt*saveLines: 3000
-! urxvt*geometry: 115x33
-! urxvt*externalBorder: 2
-! urxvt*internalBorder: 10
-! !urxvt*fade: 50
-! !urxvt*fadecolour: #47CFE7
-! !urxvt*font: xft:Bitstream Vera Sans Mono:charwidth=8:pixelsize=10
-! ! urxvt*font: xft:Terminus:pixelsize=12
-! !urxvt*font: -*-Bright-*
-! urxvt*transparent:    true
-! urxvt*color0:           #000000
-! urxvt*color1:           #E86402
-! urxvt*color2:           #A2EBA2
-! urxvt*color3:           #968a38
-! urxvt*color4:           #414171
-! urxvt*color5:           #963c59
-! urxvt*color6:           #418179
-! urxvt*color7:           #bebebe
-! urxvt*color8:           #666666
-! urxvt*color9:           #a35757
-! urxvt*color10:          #c5f779
-! urxvt*color11:          #fff796
-! urxvt*color12:          #4186be
-! urxvt*color13:          #cf9ebe
-! urxvt*color14:          #71bebe
-! urxvt*color15:          #FFFCCC
-
-! Cursor theme
-xcursor.theme:            Vanilla-DMZ
-
-! URxvt config
+URxvt*font: xft:Source\ Code\ Pro\ Medium:size=8:antialias=true:hinting=true,xft:Source\ Code\ Pro\ Medium:size=8:antialias=true:hinting=true,xft:Inconsolata\ for\ Powerline:size=8
 URxvt*termName:           rxvt-16color
 
-! URxvt.font:               xft:monaco:size=10:antialias=true
 URxvt*internalBorder:     0
 URxvt*selectToClipboard:  true
 
@@ -71,41 +26,41 @@ URxvt*keysym.C-Delete:    matcher:last
 URxvt*keysym.M-Delete:    matcher:list
 
 URxvt.keysym.F11: perl:fullscreen:switch
-! regexps
-! .0 for web links
-URxvt.matcher.pattern.1: \\B(/\\S+?):(\\d+)(?=:|$)               ! gcc and all
-URxvt.matcher.pattern.2: (?:\\s)([\\~\\.]?\\/\{1,1\}[\\.\\w]\\S+)\\b
-! launchers . Need all 0..x defined
-URxvt.matcher.launcher.0: xdg-open
-URxvt.matcher.launcher.1: gvim +$2 $1
-URxvt.matcher.launcher.2: emacsclient $1
+! ! regexps
+! ! .0 for web links
+! URxvt.matcher.pattern.1: \\B(/\\S+?):(\\d+)(?=:|$)               ! gcc and all
+! URxvt.matcher.pattern.2: (?:\\s)([\\~\\.]?\\/\{1,1\}[\\.\\w]\\S+)\\b
+! ! launchers . Need all 0..x defined
+! URxvt.matcher.launcher.0: xdg-open
+! URxvt.matcher.launcher.1: gvim +$2 $1
+! URxvt.matcher.launcher.2: emacsclient $1
 
-!! Change font size on Control-Plus/Minus
-! URxvt*keysym.C-Up:     font-size:increase
-! URxvt*keysym.C-Down:   font-size:decrease
-! URxvt*keysym.C-S-Up:   font-size:incglobal
-! URxvt*keysym.C-S-Down: font-size:decglobal
-! URxvt*keysym.C-equal:  font-size:reset
-! URxvt*keysym.C-slash:  font-size:show
-URxvt*saveLines:          100000000
+! !! Change font size on Control-Plus/Minus
+! ! URxvt*keysym.C-Up:     font-size:increase
+! ! URxvt*keysym.C-Down:   font-size:decrease
+! ! URxvt*keysym.C-S-Up:   font-size:incglobal
+! ! URxvt*keysym.C-S-Down: font-size:decglobal
+! ! URxvt*keysym.C-equal:  font-size:reset
+! ! URxvt*keysym.C-slash:  font-size:show
+URxvt*saveLines:          100000
 URxvt*scrollWithBuffer:   true
 URxvt*scrollTtyKeypress:  true
 URxvt*scrollTtyOutput:    false
 URxvt.scrollstyle:        plain
 URxvt.scrollBar:          on
 
-! URxvt.tabbed.tabbar-fg:   8
-! URxvt.tabbed.tabbar-bg:   0
-! URxvt.tabbed.tab-fg:      2
-! URxvt.tabbed.tab-bg:      0
-! URxvt.tabbed.new-button:  no
-! URxvt.tabbed.title:       no
+! ! URxvt.tabbed.tabbar-fg:   8
+! ! URxvt.tabbed.tabbar-bg:   0
+! ! URxvt.tabbed.tab-fg:      2
+! ! URxvt.tabbed.tab-bg:      0
+! ! URxvt.tabbed.new-button:  no
+! ! URxvt.tabbed.title:       no
 URxvt.tabbedex.new-button:	true
 URXvt.tabbedex.reopen-on-close:	yes
-! URxvt.keysym.Control-Shift-t:	perl:tabbedex:new_tab
-! URxvt.keysym.Shifft-Right:	perl:tabbedex:next_tab
-! URxvt.keysym.Shift-Left:	perl:tabbedex:prev_tab
-! URxvt.tabbed.no-tabbedex-keys:	true
+! ! URxvt.keysym.Control-Shift-t:	perl:tabbedex:new_tab
+! ! URxvt.keysym.Shifft-Right:	perl:tabbedex:next_tab
+! ! URxvt.keysym.Shift-Left:	perl:tabbedex:prev_tab
+! ! URxvt.tabbed.no-tabbedex-keys:	true
 
 Urxvt*depth:              32
 ! Tango color palette
@@ -141,6 +96,6 @@ URxvt*color14:            #63e9e9
 URxvt*color7:             #d3d7cf
 URxvt*color15:            #eeeeec
 
-! xscreensaver
-! xscreensaver.fade:        false
-! xscreensaver.unfade: false
+! ! xscreensaver
+! ! xscreensaver.fade:        false
+! ! xscreensaver.unfade: false
