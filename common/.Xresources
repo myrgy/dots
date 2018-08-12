@@ -100,8 +100,8 @@ URxvt.scrollBar:          on
 ! URxvt.tabbed.tab-bg:      0
 ! URxvt.tabbed.new-button:  no
 ! URxvt.tabbed.title:       no
-URxvt.tabbed.new-button:	true
-URXvt.tabbed.reopen-on-close:	yes
+URxvt.tabbedex.new-button:	true
+URXvt.tabbedex.reopen-on-close:	yes
 ! URxvt.keysym.Control-Shift-t:	perl:tabbedex:new_tab
 ! URxvt.keysym.Shifft-Right:	perl:tabbedex:next_tab
 ! URxvt.keysym.Shift-Left:	perl:tabbedex:prev_tab
